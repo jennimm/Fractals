@@ -57,7 +57,6 @@ def drawTree(snowflake, branchLength, shorterLength, angle):
     if branchLength<5:
         return 
     else:
-        print('hey')
         snowflake.forward(branchLength)
         newLength = branchLength-shorterLength
         snowflake.right(angle)
