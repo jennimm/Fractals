@@ -2,7 +2,7 @@ import turtle as t
 import random
 import math
 
-#window = t.Screen()
+window = t.Screen()
 snowflake = t.Turtle()
 snowflake.left(45)
 # for x in range(100):
@@ -57,7 +57,6 @@ def drawTree(snowflake, branchLength, shorterLength, angle):
     if branchLength<5:
         return 
     else:
-        print('hey')
         snowflake.forward(branchLength)
         newLength = branchLength-shorterLength
         snowflake.right(angle)
@@ -67,12 +66,7 @@ def drawTree(snowflake, branchLength, shorterLength, angle):
 
         snowflake.right(angle)
         snowflake.backward(branchLength)
-        #drawTree(snowflake, branchLength*0.5, angle)
 
-        # snowflake.right(angle)
-        # snowflake.forward(0.5*branchLength)
-        #drawTree(branchLength*0.25, angle)
-        
-        #snowflake.forward()
 
-drawTree(snowflake, 50, 5, 30)
+drawTree(snowflake, 30, 5, 20)
+window.exitonclick()
